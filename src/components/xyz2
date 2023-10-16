@@ -1,0 +1,27 @@
+import React, { useState, useEffect } from 'react';
+import './UserList.css';
+
+function UserList() {
+  const [users, setUsers] = useState([]);
+  // ... (rest of the code remains unchanged)
+
+  return (
+    <div className="container">
+      <h2 className="title">Registered Users</h2>
+      <ul>
+        {users.map((user) => (
+          <li key={user.id} className="userItem">
+            <span>{user.fullName} - {user.email}</span>
+            <div>
+              <button className="button" onClick={() => handleView(user.id)}>View</button>
+              <button className="button" onClick={() => handleEdit(user.id)}>Edit</button>
+              <button className="button" onClick={() => handleDelete(user.id)}>Delete</button>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default UserList;

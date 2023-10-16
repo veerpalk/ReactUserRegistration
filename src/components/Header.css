@@ -1,0 +1,44 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    margin-top: 0px !important;
+}
+
+.logo {
+    color: #fff;
+    margin: 0;
+}
+
+.logo-highlight {
+    color: red;
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Adjust this value for spacing between menu items */
+}
+
+.nav-link {
+    color: #ffffff !important; /* white color */
+    padding: 10px 20px; /* Increased padding for more area */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    background-clip: padding-box; /* To keep the background inside the border radius */
+}
+
+.nav-link:hover {
+    color:black !important;
+    background-color: #ffcccc; /* light red */
+    padding: 6px 6px; /* Increased padding for more area */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adding depth with a shadow */
+    transform: translateY(-3px); /* Giving a slight lift effect */
+}
+.model {
+    width: 150px;
+    height: 50px;
+}

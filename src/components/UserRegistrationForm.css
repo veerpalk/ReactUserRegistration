@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../assets/background.jpg');
+    background-size: cover; 
+    background-repeat: repeat-y; 
+    height: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+.signup-form-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 40px 30px;
+    background-color: #f7cfcf82;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.signup-header {
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 30px;
+}
+.signup-header h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.signup-header p {
+    font-size: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: normal;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #FF0000;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    background-color: #202020;
+    color: white;
+    border: 2px solid #2c2c2c;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.signup-form input:focus {
+    border-color: #FF0000;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FF0000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d90000;
+}
+
+a {
+    color: #FF0000;
+}
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Fixed position allows the loader to cover the entire viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+.loader {
+    max-width: 100px; /* Adjust based on your preference */
+    max-height: 100px;
+}

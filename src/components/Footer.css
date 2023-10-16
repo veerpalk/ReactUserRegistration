@@ -1,0 +1,39 @@
+/* Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 10px 30px;
+    color: white;
+
+    flex-shrink: 0; /* Prevents the footer from shrinking */
+    height: 60px; /* or whatever height you desire */
+}
+
+.footer-logo {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo-highlight {
+    color: red;
+}
+
+.footer-logo-icon {
+    font-size: 24px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-rights {
+    margin: 0;
+}
+
