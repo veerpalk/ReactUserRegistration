@@ -1,5 +1,3 @@
-/* Header.css */
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -20,23 +18,23 @@
 
 nav {
     display: flex;
-    gap: 20px; /* Adjust this value for spacing between menu items */
+    gap: 20px; 
 }
 
 .nav-link {
-    color: #ffffff !important; /* white color */
-    padding: 10px 20px; /* Increased padding for more area */
+    color: #ffffff !important; 
+    padding: 10px 20px; 
     transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
     border-radius: 5px;
-    background-clip: padding-box; /* To keep the background inside the border radius */
+    background-clip: padding-box;
 }
 
 .nav-link:hover {
     color:black !important;
-    background-color: #ffcccc; /* light red */
-    padding: 6px 6px; /* Increased padding for more area */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* Adding depth with a shadow */
-    transform: translateY(-3px); /* Giving a slight lift effect */
+    background-color: #ffcccc; 
+    padding: 6px 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-3px); 
 }
 .model {
     width: 150px;

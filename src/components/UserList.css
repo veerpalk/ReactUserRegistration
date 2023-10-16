@@ -54,16 +54,15 @@
     outline: none;
 }
 
-/* Different colors for the buttons */
 .button:nth-child(1) {
-    background-color: #55df3f; /* Blue for View */
+    background-color: #55df3f; 
 }
 
 .button:nth-child(2) {
-    background-color: #e67e22; /* Orange for Edit */
+    background-color: #e67e22; 
 }
 
 .button:nth-child(3) {
-    background-color: #fb5643; /* Red for Delete */
+    background-color: #fb5643; 
 }
 

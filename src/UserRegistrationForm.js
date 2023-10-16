@@ -25,7 +25,6 @@ function UserRegistrationForm() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        // You can add logic here for form submission
 
         if (formData.password !== formData.confirmPassword) {
             toast.error("Passwords do not match");
@@ -35,12 +34,10 @@ function UserRegistrationForm() {
         const myHeaders = new Headers();
         myHeaders.append("Content-Type", "application/json");
 
-        // Log the form data
 
         // Exclude confirmPassword
         const { confirmPassword, ...dataToSubmit } = formData;
 
-        // Log the form data
         for (const key in dataToSubmit) {
             console.log("Form Data:", key + " " + dataToSubmit[key]);
         }

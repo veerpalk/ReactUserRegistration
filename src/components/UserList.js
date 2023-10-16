@@ -38,7 +38,7 @@ function UserList() {
                 setSelectedUser(userData);
             } else {
                 setError("Network error: Failed to fetch user details. Please check your connection and try again.");
-                //console.error('Failed to fetch user details');
+                console.error('Failed to fetch user details');
             }
         } catch (error) {
             console.error('Error:', error);

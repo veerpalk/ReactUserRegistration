@@ -1,5 +1,3 @@
-/* Footer.css */
-
 .footer {
     display: flex;
     justify-content: space-between;
@@ -8,8 +6,8 @@
     padding: 10px 30px;
     color: white;
 
-    flex-shrink: 0; /* Prevents the footer from shrinking */
-    height: 60px; /* or whatever height you desire */
+    flex-shrink: 0; 
+    height: 60px; 
 }
 
 .footer-logo {
