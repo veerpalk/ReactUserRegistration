@@ -3,6 +3,8 @@ import { FaEnvelope, FaUser, FaLock, FaPhone, FaIdBadge } from 'react-icons/fa';
 import './UserRegistrationForm.css';
 import BabylonModel from './BabylonModel';
 import toast from 'react-hot-toast';
+import { API_URL } from '../src/constants/Constants'
+
 
 
 function UserRegistrationForm() {
@@ -55,7 +57,7 @@ function UserRegistrationForm() {
         };
 
 
-        const response = await fetch('http://localhost:9090/addUser', requestOptions);
+        const response = await fetch(API_URL+'/addUser', requestOptions);
         try {
 
             if (!response.ok) {

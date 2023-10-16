@@ -6,6 +6,7 @@ import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import ErrorPage from './ErrorPage';
+import { API_URL } from '../constants/Constants';
 
 
 
@@ -64,8 +65,7 @@ function UserRegistrationForm(props) {
         };
 
         const apiUrl = mode === 'edit' 
-        ? `http://localhost:9090/updateUser/${user.id}` 
-        : 'http://localhost:9090/addUser';
+        ? API_URL+`/updateUser/${user.id}` : API_URL+'/addUser';
 
 
         const response = {};

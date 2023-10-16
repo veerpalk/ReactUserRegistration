@@ -5,6 +5,7 @@ import UserDetail from './UserDetail';
 import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { FaEye, FaPencilAlt , FaTrash} from 'react-icons/fa';
+import { API_URL } from '../constants/Constants';
 
 function UserList() {
     const [error, setError] = useState(null);
@@ -16,7 +17,7 @@ function UserList() {
     useEffect(() => {
         async function fetchUsers() {
             try {
-                const response = await fetch('http://localhost:9090/users');
+                const response = await fetch(API_URL+'/users');
                 if (response.status === 200) {
                     const data = await response.json();
                     setUsers(data);
@@ -32,7 +33,7 @@ function UserList() {
 
     const handleView = async (userId) => {
         try {
-            const response = await fetch(`http://localhost:9090/user/${userId}`);
+            const response = await fetch(API_URL+`/user/${userId}`);
             if (response.status === 200) {
                 const userData = await response.json();
                 setSelectedUser(userData);
@@ -56,7 +57,7 @@ function UserList() {
         if (window.confirm('Are you sure you want to delete this user?')) {
             const response = {};
             try {
-            const response = await fetch(`http://localhost:9090/user/${userId}`, {
+            const response = await fetch(API_URL+`/user/${userId}`, {
                 method: 'DELETE',
             });
                 if (response.status === 200) {

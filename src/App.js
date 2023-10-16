@@ -5,8 +5,6 @@ import { Toaster } from 'react-hot-toast';
 import UserList from './components/UserList';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import UserDetail from './components/UserDetail';
-import ErrorPage from './components/ErrorPage';
 import ErrorBoundary from './components/ErrorBoundary';
 
 function App() {

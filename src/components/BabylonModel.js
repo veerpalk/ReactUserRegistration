@@ -1,5 +1,5 @@
-import { Canvas, ambientLight, directionalLight } from "@react-three/fiber";
-import { useGLTF, Stage, PresentationControls, Environment } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 
 function Model(props) {
     const { scene } = useGLTF("assets/Logo.glb");
