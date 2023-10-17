@@ -198,7 +198,7 @@ function UserRegistrationForm(props) {
                     />
                 </div>
                 <button type="submit">{mode === "edit" ? "Update" : "Register"}</button>
-                <p>Already have an account? <a href="#">Log In</a></p>
+                <p>Already have an account? <a href="/login">Log In</a></p>
             </form>
             </div>
             )}

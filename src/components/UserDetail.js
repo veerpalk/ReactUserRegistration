@@ -3,6 +3,7 @@ import './UserDetail.css';
 import { useNavigate } from 'react-router-dom';
 
 
+
 function UserDetail({ user }) {
     const navigate = useNavigate();
 

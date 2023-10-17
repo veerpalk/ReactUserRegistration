@@ -6,6 +6,7 @@ import UserList from './components/UserList';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import ErrorBoundary from './components/ErrorBoundary';
+import UserLoginForm from './components/UserLoginForm';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 <ErrorBoundary>
                     <Routes>
                         <Route path="/register" element={<UserRegistrationForm />} />
+                        <Route path="/login" element={<UserLoginForm />} />
                         <Route path="/all-users" element={<UserList />} />
                         <Route path="/" element={<UserRegistrationForm />} />
                     </Routes>
