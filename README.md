@@ -68,3 +68,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+Back end git repo: https://github.com/veerpalk/SpringBootUserRegistration
+Front end git Repo: https://github.com/veerpalk/ReactUserRegistration
+
+Backend App Link: https://adsologist-api.onrender.com/
+Front end App link: https://main--adsologist-web.netlify.app/
+
+Api Documentation: Swagger: https://adsologist-api.onrender.com/swagger-ui/index.html
