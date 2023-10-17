@@ -8,7 +8,6 @@ function UserDetail({ user }) {
     const navigate = useNavigate();
 
     const handleBackNavigation = () => {
-        window.location.href = "/all-users";
         navigate('/all-users');
     };
     return (
