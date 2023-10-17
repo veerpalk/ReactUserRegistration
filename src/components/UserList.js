@@ -101,7 +101,7 @@ function UserList() {
                         <ul>
                             {users.map((user) => (
                                 <li key={user.id} className="userItem">
-                                    <span>{user.fullName} , email:  {user.email}</span>
+                                    <span>{user.username} , email:  {user.email}</span>
                                     <div>
                                         
                                         <button className="button" onClick={() => handleView(user.id)}><FaEye/>View</button>
